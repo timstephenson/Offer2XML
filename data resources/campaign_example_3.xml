@@ -1,0 +1,75 @@
+<campaign>
+	<!-- The offer node, offerId = unique offer ID, clickURL = target URL of click on banner, swf = child swf '[size]' will be replaced by actual size, this is done by shell swf -->
+	<offer offerId="[some uniqiue id to offer]" clickURL="http://www.charter.com/dynbanner" swf="http://data.creativelift.net/cas_dynamic/dyn_banner_subshell_template_[size].swf">
+		<!-- this is the headline, must be in CDATA tags (will have basic html formatting sometimes) -->
+		<headline><![CDATA[NOW, GET MORE FROM CHARTER]]></headline>
+		<!-- this is the services node, it always contains these nodes, which specify true or false for each service -->
+		<services>
+			<video>true</video>
+			<data>true</data>	
+			<phone>true</phone>
+		</services>
+		<!-- this is the learnMore node, this is the text that gets attached to the CTA button -->
+		<learnMore><![CDATA[LEARN MORE]]></learnMore>
+		<!-- this is the bullets node, for each bullet inside bullets, we will display a line of copy. the service attribute is for determining when to display which bullet -->
+		<bullets>
+			<bullet service="video"><![CDATA[100+ channels of the best shows plus 6,500+ movies and shows On Demand.]]></bullet>
+			<bullet service="data"><![CDATA[Internet speeds up to 1Mbps. Includes free access to ESPN3.com.]]></bullet>
+			<bullet service="phone"><![CDATA[Unlimited long distance calling to the U.S., Canada or Puerto Rico, plus 10 calling features.]]></bullet>
+		</bullets>
+		<!-- price - dollars, cents (only use numbers please no special characters) the prefix, suffix and term all in cdata tags -->
+		<price>
+			<dollars>104</dollars>
+			<cents>97</cents>
+			<prefix><![CDATA[Now only]]></prefix>
+			<suffix><![CDATA[/mo]]></suffix>
+			<term><![CDATA[for 6 months]]></term>
+		</price>
+	</offer>
+	<offer offerId="[some uniqiue id to offer]" clickURL="http://www.charter.com/dynbanner">
+		<headline><![CDATA[LOCK IN YOUR PRICE FOR 2 YEARS!]]></headline>
+		<services>
+			<video>true</video>
+			<data>true</data>	
+			<phone>true</phone>
+		</services>
+		<learnMore><![CDATA[LEARN MORE]]></learnMore>
+		<bullets>
+			<bullet service="video"><![CDATA[Get top-rated channels in HD.  6,500+ shows On Demand, 900+ in HD.]]></bullet>
+			<bullet service="data"><![CDATA[Internet speeds up to 8Mbps including  PowerBoost® and access to ESPN3.com.]]></bullet>
+			<bullet service="phone"><![CDATA[Unlimited long distance calling to the U.S., Canada or Puerto Rico. Includes free wire maintenance. ]]></bullet>
+		</bullets>
+		<price>
+			<dollars>109</dollars>
+			<cents>97</cents>
+			<prefix><![CDATA[Now only]]></prefix>
+			<suffix><![CDATA[/mo]]></suffix>
+			<term><![CDATA[for 6 months]]></term>
+		</price>
+	</offer>
+	<offer offerId="[some uniqiue id to offer]" clickURL="http://www.charter.com/dynbanner">
+		<headline><![CDATA[UPGRADE AND GET MORE FROM CHARTER]]></headline>
+		<services>
+			<video>true</video>
+			<data>true</data>	
+			<phone>false</phone>
+		</services>
+		<learnMore><![CDATA[LEARN MORE]]></learnMore>
+		<bullets>
+			<bullet service="video"><![CDATA[100+ channels of the best shows plus 6,500+ movies and shows On Demand. ]]></bullet>
+			<bullet service="data"><![CDATA[Internet speeds up to 1Mbps. Includes free access to ESPN3.com. ]]></bullet>
+		</bullets>
+		<price>
+			<dollars>89</dollars>
+			<cents>98</cents>
+			<prefix><![CDATA[Now only]]></prefix>
+			<suffix><![CDATA[/mo]]></suffix>
+			<term><![CDATA[for 6 months]]></term>
+		</price>
+	</offer>
+	<!--
+		...
+		an offer node to map to each offer.
+		...
+	-->
+</offers>

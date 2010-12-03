@@ -1,6 +1,6 @@
 h1. CSV to XML Parser
 
-This is not a general purpose parser. It is a simple parser designed to convert a specific format
+This is not a general purpose parser. It is a simple parser designed to convert a specific type
 of CSV file to a specific XML format.
 
 h3. Dependencies
@@ -10,7 +10,7 @@ This requires Ruby 1.9.x. If you want to use it with early versions of ruby, use
 h3. The CSV format
 
 ChoiceID,Amount,Offer,Bullets
-40112_existing,94.97,Digital + 1M + ULD 94.97,"NOW, GET MORE FROM CHARTER\n\n100+ channels of the best shows plus 6,500+ movies and shows On Demand.\n\nInternet speeds up to 1Mbps. Includes free access to ESPN3.com.\n\nUnlimited long distance calling to the U.S., Canada or Puerto Rico, plus 10 calling features."
+40112_existing,94.97,Digital + 1M + ULD,"NOW, GET MORE\n\n100+ channels of the best shows.\n\nInternet speeds up to 1Mbps.\n\nUnlimited long distance calling."
 
 It expects the Bullets column to include zero or more returns, and converts the paragraphs as follows:
 
@@ -24,7 +24,7 @@ h3. Usage
 
 If the optional argument is left off, the file name will be offers.xml and it will be saved in the same directory as the script.
 
-h3. Running Test
+h3. Running Tests
 
 > cd /path_to_project
 > ruby test/offer_test.rb

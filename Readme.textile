@@ -15,7 +15,8 @@ ChoiceID,Amount,Offer,Bullets
 It expects the Bullets column to include zero or more returns, and converts the paragraphs as follows:
 
 * The first paragraph becomes the headline
-* The following paragraphs are checked with a regular expression to place them into a "data", "phone", or "video" bullet. They are also tested for and added to the services node.
+* The following paragraphs are checked with a regular expression to place them into a "data", "phone", or "video" bullet. 
+* The services nodes are populated by testing with the same expression.
 
 h3. Usage
 
